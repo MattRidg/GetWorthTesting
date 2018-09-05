@@ -22,18 +22,20 @@
 
 </body>
 <script>
-    Plotly.d3.csv('https://docs.google.com/spreadsheets/d/1qsVMPDF5CfIkPjIQoqtF_E-HNYPmqwhTNdIN07eMtl8/gviz/tq?tqx=out:csv', function(err, rows){
+    Plotly.d3.csv('https://raw.githubusercontent.com/MattRidg/GetWorthTesting/master/landroverVelocityTest.csv', function(err, rows){
 function unpack(rows, key) {
 	return rows.map(function(row)
 	{ return row[key]; });}
 
 var trace1 = {
-	x:unpack(rows, 'x1'), y: unpack(rows, 'x1'), z: unpack(rows, 'z1'),
+	x:unpack(rows, 'mileage'), y: unpack(rows, 'min_price'), z: unpack(rows, 'year'),
 	mode: 'markers',
 	marker: {
-		size: 12,
+        size: 12,
+        color: 'green',
+        opacity: '0.5',
 		line: {
-		color: 'rgba(217, 217, 217, 0.14)',
+		color: 'green',
 		width: 0.5},
 		opacity: 0.8},
 	type: 'scatter3d'
