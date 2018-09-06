@@ -1,99 +1,51 @@
 <head>
     <script type="text/javascript" src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script type="text/javascript" src="plotly.js"></script>
-    <script type="text/javascript"  src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- <script type="text/javascript"  src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+
+    <style>
+            .box1 {
+                width: 40%;
+                background-color: #9933cc;
+                border: black;
+                border-width: 5px;
+                padding: 8px;
+                float: right;
+            }
+            .box2 {
+                width: 50%;
+                background-color: #9933cc;
+                border: black;
+                border-width: 5px;
+                padding: 8px;
+                float: left;
+            }
+           
+
+            
+            </style>
 
 </head>
 
 <header>
     <h1>
-        Testing Plotly
+        Testing Plotly Graphs
     </h1>
 </header>
 
-<body> 
-        <script>
-        window.onload = function () {
-        
-        var chart = new CanvasJS.Chart("chartContainer", {
-            animationEnabled: true,
-            title:{
-                text: "Server Performance"
-            },
-            axisX: {
-                title:"Server Load (in TPS)"
-            },
-            axisY:{
-                title: "Response Time (in ms)"
-            },
-            data: [{
-                type: "scatter",
-                toolTipContent: "<span style=\"color:#4F81BC \"><b>{name}</b></span><br/><b> Load:</b> {x} TPS<br/><b> Response Time:</b></span> {y} ms",
-                name: "Server Pluto",
-                showInLegend: true,
-                dataPoints: [
-                    { x: 23, y: 330 },
-                    { x: 28, y: 390 },
-                    { x: 39, y: 400 },
-                    { x: 34, y: 430 },
-                    { x: 24, y: 321 },
-                    { x: 29, y: 250 },
-                    { x: 29, y: 370 },
-                    { x: 23, y: 290 },
-                    { x: 27, y: 250 },
-                    { x: 34, y: 380 },
-                    { x: 36, y: 320 },
-                    { x: 33, y: 405 },
-                    { x: 32, y: 453 },
-                    { x: 21, y: 292 }
-                ]
-            },
-            {
-                type: "scatter",
-                name: "Server Mars",
-                showInLegend: true, 
-                toolTipContent: "<span style=\"color:#C0504E \"><b>{name}</b></span><br/><b> Load:</b> {x} TPS<br/><b> Response Time:</b></span> {y} ms",
-                dataPoints: [
-                    { x: 19, y: 200 },
-                    { x: 27, y: 300 },
-                    { x: 35, y: 330 },
-                    { x: 32, y: 190 },
-                    { x: 29, y: 189 },
-                    { x: 22, y: 150 },
-                    { x: 27, y: 200 },
-                    { x: 26, y: 190 },
-                    { x: 24, y: 225 },
-                    { x: 33, y: 330 },
-                    { x: 34, y: 250 },
-                    { x: 30, y: 120 },
-                    { x: 37, y: 153 },
-                    { x: 24, y: 196 }
-                ]
-            }]
-        });
-        chart.render();
-        
-        }
-        </script>
-       
-        
-        <div id="chartContainer" style="height: 370px; width: 100%;">
-        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-        </div>
-       
-
+<body onload="graph2()">
+        <div id="3dDiv" style="width:40%"></div>
 </body>
 
 
 
-
-<body onload="makeGraph()">
+<!-- <body onload="makeGraph(),drawMileageVsPrice()">
     
-    <div id="graph"></div>
-    <div id="graph2"></div>
 
-   
-    <div id="3dDiv" style="width:80%;height:80%"></div>
+    <div id="3dDiv" style="width:40%"></div>
+    <div class="box2" id="box1Graph"> </div>
+        
+        
 
 </body>
-
+ -->
