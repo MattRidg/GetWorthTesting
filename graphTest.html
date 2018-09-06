@@ -1,6 +1,7 @@
 <head>
     <script type="text/javascript" src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script type="text/javascript" src="plotly.js"></script>
+    <script type="text/javascript"  src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 </head>
 
@@ -10,169 +11,89 @@
     </h1>
 </header>
 
+<body> 
+        <script>
+        window.onload = function () {
+        
+        var chart = new CanvasJS.Chart("chartContainer", {
+            animationEnabled: true,
+            title:{
+                text: "Server Performance"
+            },
+            axisX: {
+                title:"Server Load (in TPS)"
+            },
+            axisY:{
+                title: "Response Time (in ms)"
+            },
+            data: [{
+                type: "scatter",
+                toolTipContent: "<span style=\"color:#4F81BC \"><b>{name}</b></span><br/><b> Load:</b> {x} TPS<br/><b> Response Time:</b></span> {y} ms",
+                name: "Server Pluto",
+                showInLegend: true,
+                dataPoints: [
+                    { x: 23, y: 330 },
+                    { x: 28, y: 390 },
+                    { x: 39, y: 400 },
+                    { x: 34, y: 430 },
+                    { x: 24, y: 321 },
+                    { x: 29, y: 250 },
+                    { x: 29, y: 370 },
+                    { x: 23, y: 290 },
+                    { x: 27, y: 250 },
+                    { x: 34, y: 380 },
+                    { x: 36, y: 320 },
+                    { x: 33, y: 405 },
+                    { x: 32, y: 453 },
+                    { x: 21, y: 292 }
+                ]
+            },
+            {
+                type: "scatter",
+                name: "Server Mars",
+                showInLegend: true, 
+                toolTipContent: "<span style=\"color:#C0504E \"><b>{name}</b></span><br/><b> Load:</b> {x} TPS<br/><b> Response Time:</b></span> {y} ms",
+                dataPoints: [
+                    { x: 19, y: 200 },
+                    { x: 27, y: 300 },
+                    { x: 35, y: 330 },
+                    { x: 32, y: 190 },
+                    { x: 29, y: 189 },
+                    { x: 22, y: 150 },
+                    { x: 27, y: 200 },
+                    { x: 26, y: 190 },
+                    { x: 24, y: 225 },
+                    { x: 33, y: 330 },
+                    { x: 34, y: 250 },
+                    { x: 30, y: 120 },
+                    { x: 37, y: 153 },
+                    { x: 24, y: 196 }
+                ]
+            }]
+        });
+        chart.render();
+        
+        }
+        </script>
+       
+        
+        <div id="chartContainer" style="height: 370px; width: 100%;">
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+        </div>
+       
+
+</body>
+
+
+
+
 <body onload="makeGraph()">
     
     <div id="graph"></div>
     <div id="graph2"></div>
-    <div>
-            <canvas id="myCanvas" onload="drawLine(_ctx,100,100,200,200)"></canvas>
-        
-    </div>
+
+   
     <div id="3dDiv" style="width:80%;height:80%"></div>
 
 </body>
-<script>
-    Plotly.d3.csv('https://raw.githubusercontent.com/MattRidg/GetWorthTesting/master/landroverVelocityTest.csv', function(err, rows){
-function unpack(rows, key) {
-	return rows.map(function(row)
-	{ return row[key]; });}
-
-var trace1 = {
-	x:unpack(rows, 'mileage'), y: unpack(rows, 'min_price'), z: unpack(rows, 'year'),
-	mode: 'markers',
-	marker: {
-        size: 12,
-        color: 'green',
-        opacity: '0.5',
-		line: {
-		color: 'green',
-		width: 0.5},
-		opacity: 0.8},
-	type: 'scatter3d'
-};
-
-var trace2 = {
-	x:unpack(rows, 'x2'), y: unpack(rows, 'y2'), z: unpack(rows, 'z2'),
-	mode: 'markers',
-	marker: {
-		color: 'rgb(127, 127, 127)',
-		size: 12,
-		symbol: 'circle',
-		line: {
-		color: 'rgb(204, 204, 204)',
-		width: 1},
-		opacity: 0.8},
-	type: 'scatter3d'};
-
-var data = [trace1];
-var layout = {margin: {
-	l: 0,
-	r: 0,
-	b: 0,
-	t: 0
-  }};
-Plotly.newPlot('3dDiv', data, layout);
-});
-</script>
-
-<!-- <script>
-    function makeTrace(i) {
-    return {
-        y: Array.apply(null, Array(10)).map(() => Math.random()),
-        line: {
-            shape: 'spline' ,
-            color: 'red'
-        },
-        visible: i === 0,
-        name: 'Data set ' + i,
-    };
-    }
-    trace00 = {
-        x : [1,2,3,4,5,6,7,8],
-        y : [10,20,30,40,30,20,10,30],
-        mode : 'markers'};
-    trace01 = {
-        x : [1,2,3,4,5,6,7,8],
-        y : [-10,-20,-30,-40,-30,-20,-10,-30],
-        mode : 'markers'};
-    trace02 = {
-        x : [1,2,3,4,5,6,7,8],
-        y : [1,2,3,4,3,2,1,3],
-        mode : 'markers'};
-    trace03 = {
-        x : [10,2,30,40,5,60,7,8],
-        y : [10,20,30,40,30,20,10,30],
-        mode : 'markers'};
-
-
-Plotly.plot('graph', [0, 1, 2, 3].map(makeTrace), {
-    updatemenus: [{
-        y: 0.8,
-        yanchor: 'top',
-        buttons: [{
-            method: 'restyle',
-            args: ['line.color', 'red'],
-            label: 'red'
-        }, {
-            method: 'restyle',
-            args: ['line.color', 'blue'],
-            label: 'blue'
-        }, {
-            method: 'restyle',
-            args: ['line.color', 'green'],
-            label: 'green'
-        }]
-    }, {
-        y: 1,
-        yanchor: 'top',
-        buttons: [{
-            method: 'restyle',
-            args: ['visible', [true, false, false, false]],
-            label: 'Data set 0'
-        }, {
-            method: 'restyle',
-            args: ['visible', [false, true, false, false]],
-            label: 'Data set 1'
-        }, {
-            method: 'restyle',
-            args: ['visible', [false, false, true, false]],
-            label: 'Data set 2'
-        }, {
-            method: 'restyle',
-            args: ['visible', [false, false, false, true]],
-            label: 'Data set 3'
-        }]
-    }],
-});
-Plotly.plot('graph2', [trace00,trace01,trace02,trace03], {
-    updatemenus: [{
-        y: 30,
-        yanchor: 'top',
-        buttons: [{
-            method: 'restyle',
-            args: ['line.color', 'red'],
-            label: 'red'
-        }, {
-            method: 'restyle',
-            args: ['line.color', 'blue'],
-            label: 'blue'
-        }, {
-            method: 'restyle',
-            args: ['line.color', 'green'],
-            label: 'green'
-        }]
-    }, {
-        y: 40,
-        yanchor: 'top',
-        buttons: [{
-            method: 'restyle',
-            args: ['visible', [true, false, false, false]],
-            label: 'Data set 00'
-        }, {
-            method: 'restyle',
-            args: ['visible', [false, true, false, false]],
-            label: 'Data set 01'
-        }, {
-            method: 'restyle',
-            args: ['visible', [false, false, true, false]],
-            label: 'Data set 02'
-        }, {
-            method: 'restyle',
-            args: ['visible', [false, false, false, true]],
-            label: 'Data set 03'
-        }]
-    }],
-});
-</script>
- -->
 
