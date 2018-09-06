@@ -215,7 +215,7 @@ Plotly.newPlot(graphDivId, data, layout);
 
 
 
-function graph(mmcode,yearboundstart,yearboundend,xaxisid,yaxisid,graphtitle,graphdivid,GroupBy,filterBy,filterValue,filterOperation){
+function graph(mmcode,yearboundstart,yearboundend,xaxisid,yaxisid,graphtitle,graphdivid,GroupBy,filterBy,filterValue,filterOperation,filterBy2,filterValue2,filterOperation2,inputMileage,inputPrice,inputYear){
     var mmCode = mmcode;
     var yearBoundEnd = yearboundend;
     var yearBoundStart = yearboundstart;
@@ -265,8 +265,10 @@ var trace1 = {
         size: 12,
         opacity: '0.5',
 		line: {
-		width: 0.5},
-        opacity: 0.8},
+            width: 0.5
+        },
+        opacity: 0.8
+    },
         transforms: [
             {
               type: 'filter',
@@ -276,20 +278,39 @@ var trace1 = {
             },
             {
                 type: 'filter',
-                target: unpack(cardata, 'year'), 
-                operation: '=',
-                value: '2013'
+                target: unpack(cardata, filterBy2), 
+                operation: filterOperation2,
+                value: filterValue2
             },  
             {
               type: 'groupby',
               groups: unpack(cardata, GroupBy), //add user control for group
             }],
+    name: 'Market Data',
 	type: 'scatter'
+};console.log(trace1);
+
+var trace2 = {
+    x: [inputMileage], y: [inputPrice],text: [inputYear],//needs a function so that in can rearrange the axis if the axis gets changed
+    mode: 'markers',
+    marker: {
+        symbol: 'triangle',
+        size: 22,
+        color: 'black',
+        opacity: '0.5',
+		line: {
+            width: 0.5
+        },
+        opacity: 0.8
+    },
+    name: 'Your Entry',
+    type: 'scatter'
+
 };
-console.log(trace1);``
+console.log(trace2);
 
 
-var data = [trace1];
+var data = [trace1,trace2];
 
 function axisRange(AxisId){
 
@@ -309,11 +330,6 @@ function axisRange(AxisId){
 
 var layout = {
   title: graphTitle,
-  scene: {
-		xaxis:{title: 'mileage'},
-		yaxis:{title: 'min_price'},
-		zaxis:{title: 'year'},
-		},
   hovermode: "x",
   margin: {
 	    l: 40,
@@ -330,7 +346,7 @@ var layout = {
 
 
 
-Plotly.newPlot(graphDivId, data, layout).then(attach);
+Plotly.newPlot(graphDivId, data, layout)/* .then(attach) */;
 
 
 
@@ -373,13 +389,20 @@ function master(){
     var filterBy = document.getElementById("filterBy").value;
     var filterOperation = document.getElementById("Operation").value;
     var filterValue = document.getElementById("filterValue").value;
+    var filterBy2 = document.getElementById("filterBy2").value;
+    var filterOperation2 = document.getElementById("Operation2").value;
+    var filterValue2 = document.getElementById("filterValue2").value;
+
+    var inputMileage = document.getElementById("inputMileage").value;
+    var inputPrice = document.getElementById("inputPrice").value;
+    var inputYear = document.getElementById("inputYear").value;    
 
     var graphdivid = '3dDiv';
     var graphtitle = 'Velocity Graph';
 
     //console.log(document.getElementById("xaxis").value);
 
-    graph(mmcode,yearBoundStart,yearBoundEnd,xaxis,yaxis,graphtitle,graphdivid,GroupBy,filterBy,filterValue,filterOperation);
+    graph(mmcode,yearBoundStart,yearBoundEnd,xaxis,yaxis,graphtitle,graphdivid,GroupBy,filterBy,filterValue,filterOperation,filterBy2,filterValue2,filterOperation2,inputMileage,inputPrice,inputYear);
 }
 
 
