@@ -4,26 +4,20 @@
     <!-- <script type="text/javascript"  src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
 
     <style>
-            .box1 {
-                width: 40%;
-                background-color: #9933cc;
-                border: black;
-                border-width: 5px;
-                padding: 8px;
-                float: right;
+            .grid-container {
+              display: grid;
+              grid-template-columns: auto auto auto;
+              background-color: white;
+              padding: 0px;
             }
-            .box2 {
-                width: 50%;
-                background-color: #9933cc;
-                border: black;
-                border-width: 5px;
-                padding: 8px;
-                float: left;
+            .grid-item {
+              background-color: rgba(255, 255, 255, 0.8);
+              border: 0px solid rgba(0, 0, 0, 0.8);
+              padding: 10px;
+              font-size: 18px;
+              text-align: left;
             }
-           
-
-            
-            </style>
+    </style>
 
 </head>
 
@@ -33,8 +27,68 @@
     </h1>
 </header>
 
-<body onload="graph2()">
-        <div id="3dDiv" style="width:40%"></div>
+<body>
+
+
+    <div class="grid-container">
+            <div class="grid-item">
+                <form>
+                        MMCode:<br>
+                        <input type="text" id="mmcode" value="35047420"><br>
+                        X Axis:<br>
+                            <select id="xaxis">
+                                    <option value="mileage">Mileage</option>
+                                    <option value="price">Price</option>
+                                    <option value="velocity">Velocity</option>
+                                    <option value="year">Year</option>
+                            </select><br>
+                        Y Axis:<br>
+                            <select id="yaxis">
+                                    <option value="price">Price</option>
+                                    <option value="mileage">Mileage</option>
+                                    <option value="velocity">Velocity</option>
+                                    <option value="year">Year</option>
+                            </select><br>
+                        Year Bound Start:<br>
+                        <input type="text" id="yearBoundStart" value="2010"><br>
+                        Year Bound End:<br>
+                        <input type="text" id="yearBoundEnd" value="2018"><br><br>
+                </form>
+            </div>
+            <div class="grid-item">
+                <form>
+                        UnknownParameter:<br>
+                        <input type="text" id="UnknownParameter" value="0"><br>
+                        MaxMileage:<br>
+                        <input type="text" id="MaxMileage" value="300000"><br>
+                        Group by:<br>
+                        <input type="text" id="GroupBy" value="year"><br>
+                        Filter by:<br>
+                        <input type="text" id="filterBy" value="velocity"><br>
+                        Operation:<br>
+                        <input type="text" id="Operation" value=">"><br>
+                        Filter by Value:<br>
+                        <input type="text" id="filterValue" value="0"><br><br>
+                </form>
+            </div>
+            <div class="grid-item">3</div>  
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>  
+            <div class="grid-item">7</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">
+                <button onclick="master()">
+                        <h2>Load Graph</h2>
+                </button>
+            </div>  
+    </div>
+        
+
+          
+        
+        <div id="3dDiv" style="width:95%"></div>
+        
 </body>
 
 
