@@ -1,0 +1,362 @@
+[
+  {
+    "MMCode": 35047421,
+    "Year": 2016,
+    "Mileage": 90000,
+    "TU_Retail": 767900,
+    "TU_Retail_Adjusted": 767900,
+    "TU_Trade": 678600,
+    "TU_Trade_Adjusted": 678600
+  },
+  {
+    "MMCode": 35047421,
+    "Year": 2016,
+    "Mileage": 10000,
+    "TU_Retail": 767900,
+    "TU_Retail_Adjusted": 806295,
+    "TU_Trade": 678600,
+    "TU_Trade_Adjusted": 712530
+  },
+  {
+    "MMCode": 64078101,
+    "Year": 2015,
+    "Mileage": 63500,
+    "TU_Retail": 272300,
+    "TU_Retail_Adjusted": 285915,
+    "TU_Trade": 237100,
+    "TU_Trade_Adjusted": 248955
+  },
+  {
+    "MMCode": 35047421,
+    "Year": 2016,
+    "Mileage": 10000,
+    "TU_Retail": 767900,
+    "TU_Retail_Adjusted": 806295,
+    "TU_Trade": 678600,
+    "TU_Trade_Adjusted": 712530
+  },
+  {
+    "MMCode": 64078101,
+    "Year": 2015,
+    "Mileage": 63500,
+    "TU_Retail": 272300,
+    "TU_Retail_Adjusted": 285915,
+    "TU_Trade": 237100,
+    "TU_Trade_Adjusted": 248955
+  },
+  {
+    "MMCode": 64078101,
+    "Year": 2015,
+    "Mileage": 0,
+    "TU_Retail": 272300,
+    "TU_Retail_Adjusted": 272300,
+    "TU_Trade": 237100,
+    "TU_Trade_Adjusted": 237100
+  },
+  {
+    "MMCode": 64027660,
+    "Year": 2017,
+    "Mileage": 65000,
+    "TU_Retail": 192800,
+    "TU_Retail_Adjusted": 183160,
+    "TU_Trade": 172700,
+    "TU_Trade_Adjusted": 164065
+  },
+  {
+    "MMCode": 64027660,
+    "Year": 2017,
+    "Mileage": 0,
+    "TU_Retail": 192800,
+    "TU_Retail_Adjusted": 192800,
+    "TU_Trade": 172700,
+    "TU_Trade_Adjusted": 172700
+  },
+  {
+    "MMCode": 35071310,
+    "Year": 2013,
+    "Mileage": 140000,
+    "TU_Retail": 411300,
+    "TU_Retail_Adjusted": 411300,
+    "TU_Trade": 355700,
+    "TU_Trade_Adjusted": 355700
+  },
+  {
+    "MMCode": 35071310,
+    "Year": 2013,
+    "Mileage": 60000,
+    "TU_Retail": 411300,
+    "TU_Retail_Adjusted": 431865,
+    "TU_Trade": 355700,
+    "TU_Trade_Adjusted": 373485
+  },
+  {
+    "MMCode": 54033250,
+    "Year": 2016,
+    "Mileage": 77000,
+    "TU_Retail": 156500,
+    "TU_Retail_Adjusted": 156500,
+    "TU_Trade": 138100,
+    "TU_Trade_Adjusted": 138100
+  },
+  {
+    "MMCode": 54033250,
+    "Year": 2016,
+    "Mileage": 0,
+    "TU_Retail": 156500,
+    "TU_Retail_Adjusted": 156500,
+    "TU_Trade": 138100,
+    "TU_Trade_Adjusted": 138100
+  },
+  {
+    "MMCode": 54025130,
+    "Year": 2017,
+    "Mileage": 56000,
+    "TU_Retail": 117300,
+    "TU_Retail_Adjusted": 117300,
+    "TU_Trade": 105700,
+    "TU_Trade_Adjusted": 105700
+  },
+  {
+    "MMCode": 54025130,
+    "Year": 2017,
+    "Mileage": 0,
+    "TU_Retail": 117300,
+    "TU_Retail_Adjusted": 117300,
+    "TU_Trade": 105700,
+    "TU_Trade_Adjusted": 105700
+  },
+  {
+    "MMCode": 5037180,
+    "Year": 2017,
+    "Mileage": 96000,
+    "TU_Retail": 481400,
+    "TU_Retail_Adjusted": 433260,
+    "TU_Trade": 431630,
+    "TU_Trade_Adjusted": 388467
+  },
+  {
+    "MMCode": 5037180,
+    "Year": 2017,
+    "Mileage": 16000,
+    "TU_Retail": 481400,
+    "TU_Retail_Adjusted": 505470,
+    "TU_Trade": 431630,
+    "TU_Trade_Adjusted": 453211
+  },
+  {
+    "MMCode": 60077612,
+    "Year": 2016,
+    "Mileage": 78000,
+    "TU_Retail": 305000,
+    "TU_Retail_Adjusted": 305000,
+    "TU_Trade": 270400,
+    "TU_Trade_Adjusted": 270400
+  },
+  {
+    "MMCode": 60077612,
+    "Year": 2016,
+    "Mileage": 0,
+    "TU_Retail": 305000,
+    "TU_Retail_Adjusted": 305000,
+    "TU_Trade": 270400,
+    "TU_Trade_Adjusted": 270400
+  },
+  {
+    "MMCode": 44048165,
+    "Year": 2015,
+    "Mileage": 116000,
+    "TU_Retail": 324780,
+    "TU_Retail_Adjusted": 324780,
+    "TU_Trade": 286230,
+    "TU_Trade_Adjusted": 286230
+  },
+  {
+    "MMCode": 44048165,
+    "Year": 2015,
+    "Mileage": 36000,
+    "TU_Retail": 324780,
+    "TU_Retail_Adjusted": 341019,
+    "TU_Trade": 286230,
+    "TU_Trade_Adjusted": 300541
+  },
+  {
+    "MMCode": 4042375,
+    "Year": 2013,
+    "Mileage": 123000,
+    "TU_Retail": 211000,
+    "TU_Retail_Adjusted": 217330,
+    "TU_Trade": 174000,
+    "TU_Trade_Adjusted": 179220
+  },
+  {
+    "MMCode": 4042375,
+    "Year": 2013,
+    "Mileage": 43000,
+    "TU_Retail": 211000,
+    "TU_Retail_Adjusted": 221550,
+    "TU_Trade": 174000,
+    "TU_Trade_Adjusted": 182700
+  },
+  {
+    "MMCode": 22032137,
+    "Year": 2015,
+    "Mileage": 138000,
+    "TU_Retail": 227300,
+    "TU_Retail_Adjusted": 215935,
+    "TU_Trade": 201400,
+    "TU_Trade_Adjusted": 191330
+  },
+  {
+    "MMCode": 22032137,
+    "Year": 2015,
+    "Mileage": 58000,
+    "TU_Retail": 227300,
+    "TU_Retail_Adjusted": 238665,
+    "TU_Trade": 201400,
+    "TU_Trade_Adjusted": 211470
+  },
+  {
+    "MMCode": 60080606,
+    "Year": 2012,
+    "Mileage": 132000,
+    "TU_Retail": 273900,
+    "TU_Retail_Adjusted": 282117,
+    "TU_Trade": 225600,
+    "TU_Trade_Adjusted": 232368
+  },
+  {
+    "MMCode": 60080606,
+    "Year": 2012,
+    "Mileage": 52000,
+    "TU_Retail": 273900,
+    "TU_Retail_Adjusted": 287595,
+    "TU_Trade": 225600,
+    "TU_Trade_Adjusted": 236880
+  },
+  {
+    "MMCode": 4030071,
+    "Year": 2013,
+    "Mileage": 85000,
+    "TU_Retail": 205600,
+    "TU_Retail_Adjusted": 215880,
+    "TU_Trade": 182600,
+    "TU_Trade_Adjusted": 191730
+  },
+  {
+    "MMCode": 4030071,
+    "Year": 2013,
+    "Mileage": 5000,
+    "TU_Retail": 205600,
+    "TU_Retail_Adjusted": 215880,
+    "TU_Trade": 182600,
+    "TU_Trade_Adjusted": 191730
+  },
+  {
+    "MMCode": 25013110,
+    "Year": 2013,
+    "Mileage": 105000,
+    "TU_Retail": 105800,
+    "TU_Retail_Adjusted": 108974,
+    "TU_Trade": 93800,
+    "TU_Trade_Adjusted": 96614
+  },
+  {
+    "MMCode": 25013110,
+    "Year": 2013,
+    "Mileage": 25000,
+    "TU_Retail": 105800,
+    "TU_Retail_Adjusted": 111090,
+    "TU_Trade": 93800,
+    "TU_Trade_Adjusted": 98490
+  },
+  {
+    "MMCode": 35071313,
+    "Year": 2017,
+    "Mileage": 58000,
+    "TU_Retail": 973062,
+    "TU_Retail_Adjusted": 0,
+    "TU_Trade": 0,
+    "TU_Trade_Adjusted": 0
+  },
+  {
+    "MMCode": 35071313,
+    "Year": 2017,
+    "Mileage": 0,
+    "TU_Retail": 973062,
+    "TU_Retail_Adjusted": 0,
+    "TU_Trade": 0,
+    "TU_Trade_Adjusted": 0
+  },
+  {
+    "MMCode": 44095430,
+    "Year": 2012,
+    "Mileage": 140000,
+    "TU_Retail": 464600,
+    "TU_Retail_Adjusted": 478538,
+    "TU_Trade": 397500,
+    "TU_Trade_Adjusted": 409425
+  },
+  {
+    "MMCode": 44095430,
+    "Year": 2012,
+    "Mileage": 60000,
+    "TU_Retail": 464600,
+    "TU_Retail_Adjusted": 487830,
+    "TU_Trade": 397500,
+    "TU_Trade_Adjusted": 417375
+  },
+  {
+    "MMCode": 22045436,
+    "Year": 2016,
+    "Mileage": 77000,
+    "TU_Retail": 161300,
+    "TU_Retail_Adjusted": 161300,
+    "TU_Trade": 143200,
+    "TU_Trade_Adjusted": 143200
+  },
+  {
+    "MMCode": 22045436,
+    "Year": 2016,
+    "Mileage": 0,
+    "TU_Retail": 161300,
+    "TU_Retail_Adjusted": 161300,
+    "TU_Trade": 143200,
+    "TU_Trade_Adjusted": 143200
+  },
+  {
+    "MMCode": 26516521,
+    "Year": 2014,
+    "Mileage": 143800,
+    "TU_Retail": 138200,
+    "TU_Retail_Adjusted": 138200,
+    "TU_Trade": 120700,
+    "TU_Trade_Adjusted": 120700
+  },
+  {
+    "MMCode": 26516521,
+    "Year": 2014,
+    "Mileage": 63800,
+    "TU_Retail": 138200,
+    "TU_Retail_Adjusted": 145110,
+    "TU_Trade": 120700,
+    "TU_Trade_Adjusted": 126735
+  },
+  {
+    "MMCode": 10019116,
+    "Year": 2014,
+    "Mileage": 154000,
+    "TU_Retail": 111700,
+    "TU_Retail_Adjusted": 106115,
+    "TU_Trade": 98900,
+    "TU_Trade_Adjusted": 93955
+  },
+  {
+    "MMCode": 10019116,
+    "Year": 2014,
+    "Mileage": 74000,
+    "TU_Retail": 111700,
+    "TU_Retail_Adjusted": 117285,
+    "TU_Trade": 98900,
+    "TU_Trade_Adjusted": 103845
+  }
+]
