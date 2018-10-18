@@ -18,22 +18,22 @@
     "TU_Trade_Adjusted": 712530
   },
   {
-    "MMCode": 64078101,
-    "Year": 2015,
-    "Mileage": 63500,
-    "TU_Retail": 272300,
-    "TU_Retail_Adjusted": 285915,
-    "TU_Trade": 237100,
-    "TU_Trade_Adjusted": 248955
+    "MMCode": 35047420,
+    "Year": 2014,
+    "Mileage": 110000,
+    "TU_Retail": 544800,
+    "TU_Retail_Adjusted": 561144,
+    "TU_Trade": 477000,
+    "TU_Trade_Adjusted": 491310
   },
   {
-    "MMCode": 35047421,
-    "Year": 2016,
-    "Mileage": 10000,
-    "TU_Retail": 767900,
-    "TU_Retail_Adjusted": 806295,
-    "TU_Trade": 678600,
-    "TU_Trade_Adjusted": 712530
+    "MMCode": 35047420,
+    "Year": 2014,
+    "Mileage": 30000,
+    "TU_Retail": 544800,
+    "TU_Retail_Adjusted": 572040,
+    "TU_Trade": 477000,
+    "TU_Trade_Adjusted": 500850
   },
   {
     "MMCode": 64078101,
